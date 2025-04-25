@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="form.js"></script>
+</head>
+<header>
+    <div class="header-top">
+        <h1 class="title">Registration Form</h1>
+    </div>
+</header>   
+<body>
+    <form action="/register" method="POST">
+        <div class="required-notice">* Required fields</div>
+        <label for="name" class="signup-label">
+            <span class="signup-label-text">* Name</span>
+            <input class="signup-label-name" type="text" name="name" id="name">
+            <span class="error-message"></span>
+        </label>
+        <label for="email" class="signup-label">
+            <span class="signup-label-text">* Email</span>
+            <input class="signup-label-email" type="text" name="email" id="email">
+            <span class="error-message"></span>
+        </label>
+        <label for="confirm-email" class="signup-label">
+            <span class="signup-label-text">* Confirm Email</span>
+            <input class="signup-label-confirm-email" type="text" name="confirm-email" id="confirm-email">
+            <span class="error-message"></span>
+        </label>
+        <label for="tier" class="signup-label">
+            <span class="signup-label-text">Tier</span>
+            <select class="signup-label-tier" name="tier" id="tier">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </label>
+        <label for="wants-spam" class="signup-label-checkbox">
+            <input class="signup-label-wants-spam" type="checkbox" name="wants-spam" id="wants-spam">
+            <span class="signup-label-text">I want to receive spam</span>
+         
+        </label>
+        
+        <button class="signup-button" type="Register">Register</button>
+    </form>
+    
+</body>
+
+
+<footer>
+    <div class="footer-link">
+        <a href="privacypolicy.html" class="privacy-policy">Privacy Policy</a>
+    </div>
+
+</footer>
+</html>

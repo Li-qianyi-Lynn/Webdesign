@@ -1,0 +1,19 @@
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #ffe8cc;
+    padding: 1rem;
+    border-top: 4px solid #91570F;
+
+
+}
+
+
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+    color: #91570F;
+
+}

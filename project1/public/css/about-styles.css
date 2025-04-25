@@ -1,0 +1,212 @@
+/* Base reset and global settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    color: #333;
+    background-color: white;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header styles */
+.header-top {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    
+}
+
+
+.logo-link {
+    flex-shrink: 0;
+    margin-right: 2rem;
+}
+
+
+.logo {
+    max-height: 100px;
+    width: auto;
+}
+
+/* Navigation styles */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+.nav-item {
+    position: relative;
+    margin: 0 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+/* Dropdown menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown a:hover {
+    background-color: #f8f9fa;
+}
+
+/* About page specific styles */
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    gap: 2rem;
+}
+
+
+.about-section {
+    grid-column: span 6;
+}
+
+.about-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.about-image {
+    width: 100%;
+    height: fit-content;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    grid-column: span 6;     
+    grid-row: 1 / span 3; 
+  
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Accessibility focus styles */
+a:focus,
+button:focus {
+    outline: 2px solid #4a90e2;
+    outline-offset: 2px;
+}
+
+/* Responsive adjustments for mobile view */
+@media (max-width: 48rem) {
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-link {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .dropdown {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Mobile about content */
+    .about-content {
+        padding: 1.5rem;
+
+    }
+
+    .about-section {
+        grid-column: span 12;
+    }
+
+    .about-image {
+        grid-column: span 12;
+        grid-row: auto;
+    }
+
+    .about-section h2 {
+        font-size: 1.25rem;
+    }
+}

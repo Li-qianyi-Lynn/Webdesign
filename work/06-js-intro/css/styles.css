@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #333;
+    color: #fff;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.logo-image {
+    max-height: 100px;
+    width: 100px;
+
+}
+
+
+.title {
+    margin: 1rem;
+    font-size: 3rem;
+    text-align: left;
+   
+
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.nav-menu {
+    position: relative;
+  
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+.dropdown {
+   
+    position: absolute;
+    background-color: #444;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    top: 100%;
+    z-index: 500;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+
+}
+
+.dropdown a {
+    display: block;
+    padding: 0.8rem 1rem;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
+
+.dropdown.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* card design */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    grid-column: span 4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card-link {
+    display: inline-block;
+    padding-top: 1rem;
+    color: #0066cc;
+    text-decoration: none;
+    margin-top:auto;
+
+
+    
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* footer design */
+footer {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* mobile view design */
+@media (max-width: 50rem) {
+
+    .card {
+        grid-column: span 12;
+    }
+}
+
+
+

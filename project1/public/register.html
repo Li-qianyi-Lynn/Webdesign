@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to Didi's fan club</title>
+    <link rel="stylesheet" href="css/register-styles.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="index.html"> <!-- to the index.html-->
+                <img class="logo" alt="We love Didi" src="images/didi.JPG">
+            </a>
+            <h1 class="title">Do you want to join DidiFan?</h1>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link">Menu</a>
+                    <div class="dropdown">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="register.html">Register</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="register.html" class="nav-link">External Links</a>
+                    <div class="dropdown">
+                        <a href="https://en.wikipedia.org/wiki/Cat">Wikipedia Cats</a>
+                        <a href="https://www.aspca.org/pet-care/cat-care">ASPCA Cat Care</a>
+                        <a href="https://icatcare.org/">International Cat Care</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <form class="form-main" action="/register" method="POST">
+                <p class="required-notice">Required fields are marked with <span class="required-star">*</span></p>
+
+                <div class="form-field">
+                    <label for="name" class="form-label">
+                        Name <span class="required-star">*</span>
+                    </label>
+                    <input type="text" 
+                           id="name" 
+                           name="name" 
+                           class="form-input"
+                           required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email" class="form-label">
+                        Email <span class="required-star">*</span>
+                    </label>
+                    <input type="email" 
+                           id="email" 
+                           name="email" 
+                           class="form-input"
+                           required>
+                </div>
+
+                <div class="form-field">
+                    <label for="subscribe-or-not" class="form-label">
+                        Do you want to join DidiFan? <span class="required-star">*</span>
+                    </label>
+                    <select name="subscribe-or-not" 
+                            id="answer" 
+                            class="form-input"
+                            required>
+                        <option value="">Please select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="maybe-later">Maybe later</option>
+                    </select>
+                </div>
+
+                <div class="form-field checkbox-field">
+                    <label class="checkbox-label">
+                        <input type="checkbox" 
+                               id="newsletter" 
+                               name="newsletter">
+                        <span class="checkbox-text">
+                            Do you want us to send you updates about Didi?
+                        </span>
+                    </label>
+                </div>
+
+                <div class="form-field">
+                    <button type="submit" class="submit-button">
+                        Join Us
+                    </button>
+                </div>
+            </form>
+
+            <div class="form-sider">
+
+                <h2>Why Join DidiFan?</h2>
+                <ul>
+                    <li>Get the <b>latest news</b> about Didi!</li>
+                    <li>Share your own <b>cat stories</b> with other fans!</li>
+                    <li>Meet other cat fans!</li>
+                    <li>And more!</li>
+                </ul>
+
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions, please contact us at:</p>
+                    <p>Email: <a href="mailto:didi@didi.com">didi@didi.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">123-456-7890</a></p>
+                </div>
+            </div>
+
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="privacypolicy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+   

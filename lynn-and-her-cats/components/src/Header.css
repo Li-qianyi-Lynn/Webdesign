@@ -1,0 +1,32 @@
+.app-header {
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    background-color: #ffe8cc;
+    padding:2rem;
+    border-bottom: 4px solid #91570F;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #91570F;
+    cursor: pointer;
+
+
+}
+
+.header-title {
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 0;
+    color: #91570F;
+  
+}
+
+

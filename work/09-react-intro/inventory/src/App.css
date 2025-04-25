@@ -1,0 +1,30 @@
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.inventory-control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.control-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.inventory-count {
+  font-size: 1rem;
+  font-weight: bold;
+  min-width: 2rem;
+  text-align: center;
+}

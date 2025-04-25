@@ -1,0 +1,137 @@
+.caring-guide-container {
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.caring-guide-title {
+    color: #91570F;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.caring-guide-description {
+    text-align: center;
+    color: black    ;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion-container {
+    margin: 2rem 0;
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-item h3 {
+    margin: 0;
+}
+
+.accordion-button {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    border: none;
+    text-align: left;
+    font-size: 1rem; 
+    font-weight: 600;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* transition: all 0.3s ease; */
+    cursor: pointer;
+}
+
+.accordion-button:hover {
+    background-color: #fff9f0;
+}
+
+.accordion-button.active {
+    background-color: #ffe8cc;
+    color: #91570F;
+    border-bottom: 2px solid #91570F;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    /* transition: max-height 0.3s ease; */
+}
+
+.accordion-content.open {
+    max-height: 500px;
+}
+
+.accordion-inner {
+    padding: 1.5rem;
+    background-color: #fff;
+}
+
+.feeding-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.info-item {
+    background-color: #fff9f0;
+    padding: 1rem;
+}
+
+.info-item h3 {
+    margin-top: 0;
+    color: #91570F;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-item p {
+    margin: 0;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .feeding-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cat-info-card {
+    background-color: #fff9f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: black;
+}
+
+.cat-care-guide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cat-care-guide-container img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .accordion-button {
+        transition: all 0.3s ease;
+    }
+    
+    .accordion-content {
+        transition: max-height 0.3s ease;
+    }
+}
