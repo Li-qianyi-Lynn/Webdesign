@@ -4,6 +4,9 @@ This repository documents my progress and projects completed while learning fron
 ## Technologies
 
 **HTML5**: Semantic markup, forms, and document structure
+
 **CSS3**: Styling, layouts, animations, and responsive design
+
 **JavaScript**: DOM manipulation, event handling, asynchronous programming
+
 **React**: Component-based architecture, state management, and hooks
